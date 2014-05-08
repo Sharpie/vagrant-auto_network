@@ -1,0 +1,5 @@
+source "http://gems.hashicorp.com"
+
+group :plugins do
+  gem 'vagrant-vmware-fusion'
+end

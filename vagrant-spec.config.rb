@@ -13,4 +13,10 @@ Vagrant::Spec::Acceptance.configure do |c|
       'VBOX_USER_HOME' => '{{homedir}}',
       'AUTO_NETWORK_TEST_RANGE' => '10.42.1.0/24',
     }
+
+  c.provider 'vmware_fusion',
+    box: (acceptance_dir + 'artifacts' + 'vmware_fusion.box').to_s,
+    env_vars: {
+      'AUTO_NETWORK_TEST_RANGE' => '10.42.2.0/24',
+    }
 end

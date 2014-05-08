@@ -2,6 +2,7 @@ namespace :acceptance do
   ARTIFACT_DIR = File.join('acceptance', 'artifacts')
   TEST_BOXES = %w[
     https://vagrantcloud.com/puppetlabs/centos-6.5-64-nocm/version/2/provider/virtualbox.box
+    https://vagrantcloud.com/puppetlabs/centos-6.5-64-nocm/version/2/provider/vmware_fusion.box
   ]
 
   directory ARTIFACT_DIR
